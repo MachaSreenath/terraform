@@ -1,6 +1,6 @@
 resource "aws_security_group" "roboshop-all" { #this is terraform name, for terraform reference only
-    name        = "dynamic-demo-name"
-    description = "dynamic-demo-desc"
+    name        = "dynamic-demo"
+    description = "dynamic-demo"
 
     dynamic ingress {
         for_each = var.ingress_rules
@@ -21,6 +21,6 @@ resource "aws_security_group" "roboshop-all" { #this is terraform name, for terr
     }
 
     tags = {
-        Name = "dynamic-demo-tags"
+        Name = "dynamic-demo"
     }
 }
