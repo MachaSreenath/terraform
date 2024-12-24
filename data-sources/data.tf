@@ -3,8 +3,8 @@ data "aws_ami" "centos8" {
     most_recent = true
 
     filter {
-    name = "name"
-    values = ["Centos-8-DevOps-Practice"]
+      name = "name"
+      values = ["Centos-8-DevOps-Practice"]
     }
 
     filter {
