@@ -1,8 +1,8 @@
 # Preference
-# 1. command line
-# 2. -var-file
+# 1. command line ($ terraform plan -var="instance_type=t3.medium")
+# 2. -var-file ($ terraform plan -var-file="file_name.tfvars")
 # 3. terraform.tfvars
-# 4. environment variables
+# 4. environment variables ($ set TF_VAR_instance_type=t3.xlarge)
 
 variable "ami_id" {
   type = string
