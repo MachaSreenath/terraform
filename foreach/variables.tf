@@ -2,16 +2,16 @@ variable "instance_names" {
   type = map
   default = {
     mongodb = "t3.small"
-    catalogue = "t2.micro"
     redis = "t2.micro"
-    mysql = "t2.micro"
+    mysql = "t3.small"
+    rabbitmq = "t2.micro"
+    catalogue = "t2.micro"
     cart = "t2.micro"
     user = "t2.micro"
-    rabbitmq = "t2.micro"
-    web = "t2.micro"
     shipping = "t3.small"
     payment = "t2.micro"
     dispatch = "t2.micro"
+    web = "t2.micro"
   }
 }
 
